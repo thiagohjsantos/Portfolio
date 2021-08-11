@@ -25,7 +25,7 @@ let lastScrollTop = 0;
 
 var t1 = new TimelineLite()
 
-t1.fromTo(htmlBar, .75, {width: `calc(0% - 6px`}, {width: `calc(70% - 6px)`, ease: Power4.easeOut})
+t1.fromTo(htmlBar, .75, {width: `calc(0% - 6px`,}, {width: `calc(70% - 6px)`, ease: Power4.easeOut})
 .fromTo(cssBar, .75, {width: `calc(0% - 6px`}, {width: `calc(45% - 6px)`, ease: Power4.easeOut})
 .fromTo(jsBar, .75, {width: `calc(0% - 6px`}, {width: `calc(45% - 6px)`, ease: Power4.easeOut})
 .fromTo(reactBar, .75, {width: `calc(0% - 6px`}, {width: `calc(60% - 6px)`, ease: Power4.easeOut})
@@ -131,10 +131,14 @@ var counter = 1;
   setInterval(function(){
     document.getElementById('radio' + counter).checked = true;
     counter++;
-    if(counter > 4){
+    if(counter > 6){
       counter = 1;
     }
-  }, 5000);
+}, 6000);
+
+ScrollOut({
+    targets: '.skills h1,.html,.slider,.contact form,.contact h1,.about-me-info, .about img'
+})
 
 
 })(window,document);

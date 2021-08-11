@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"> -->
 
     <title>Thiago Santos - Portfolio</title>
 </head>
 <body>
     <div class="se-pre-con" id="proto"></div>
 
-    <div class="container navbar">
+    <div class="container navbar" id="home">
         <header>
             <div class="lgo">
-            <h1>
+            <h1><a href="#home">
                <span>T</span>hiago <span>S</span>antos
+            </a>
             </h1>
         </div>
 
@@ -31,9 +33,10 @@
         </nav>
         </header>
     </div>
-    <div class="container Banner"><img src="img/Banner.jpg" alt="Banner">
+    <div class="container Banner"><img src="img/live_banner.gif" alt="Banner"/>
     </div> 
-    <div class="container Icon"><img src="img/teste.png" alt="art" id="Icon">
+    <div class="container Icon">
+        <img src="img/dev_icon.png" alt="Developer Icon" id="Icon"/>
     </div>
 
     <div class="container main-section-info">
@@ -88,7 +91,6 @@
                     <span>J</span> 
                     <span class="m-left">r</span>
                     <span class="m-left">.</span>
-                    
                 </h1>
                 <p>HTML / CSS / JavaScript / React.JS / PHP / C# / RPA / .NET / SQL / Xamarin / Bootstrap </p>
                 <a href="#contact">Me contate</a>
@@ -99,8 +101,8 @@
     <div class="container about" id="about">
         <h1>Sobre Mim</h1>
         <div class="about-me-info">
-            <a href="https://www.linkedin.com/in/thiago-santos-6b6624182/"><img src="img/linkedin_icon.png" alt="LinkedIn" class="icon1"/></a>
-            <a href="https://github.com/DevHenr"><img src="img/GitHub_Icon.png" alt="GitHub" class="icon2"/></a>
+            <a href="https://www.linkedin.com/in/thiago-santos-6b6624182/" target="LinkedIn"><img src="img/linkedin_icon.png" alt="LinkedIn" class="icon1"/></a>
+            <a href="https://github.com/DevHenr" target="GitHub"><img src="img/GitHub_Icon.png" alt="GitHub" class="icon2"/></a>
             <img src="img/Profile_Photo.jpeg" alt="Profile Photo"/>
             <h3><span>T</span>HIAGO <span>S</span>ANTOS</h3>
             <h2>Full Stack Developer</h2>
@@ -108,91 +110,71 @@
             adoro desenvolver aplicações sejam elas back-end ou front-end, por isso estou sempre buscando me atualizar quando se trata de tecnologia.</p>
         <hr><p>||</p>
         </div>
-       <img src="img/paint.png" alt="art"/>
+       <img src="img/paint.png" alt="art" class="paint"/>
     </div>
 
     <div class="container skills" id="skills">
         <h1>Habilidades</h1>
-        <p class="skills-info">Possuo conhecimentos em linguagens como: PHP, RPA, HTML, CSS, Xamarin, JavaScript e C#. 
+        <!-- <p class="skills-info">Possuo conhecimentos em linguagens como: PHP, RPA, HTML, CSS, Xamarin, JavaScript e C#. 
             Já fiz uso de bibliotecas ou Frameworks como: Bootstrap, .NET e React JS. 
-            Também detenho experiência com bancos de dados SQL</p>
+            Também detenho experiência com bancos de dados SQL</p> -->
             <div class="html">
-                <div class="tag-html">
-                    <p>HTML</p>
-                </div>
                 <div class="progressbar">
+                    <p>HTML</p>
                     <div class="bar-html" per="70"></div>
                 </div>
             </div>
             <div class="html">
-                <div class="tag-css">
-                    <p>CSS</p>
-                </div>
                 <div class="progressbar">
+                    <p>CSS</p>
                     <div class="bar-css" per="45"></div>
                 </div>
             </div>
             <div class="html">
-                <div class="tag-javascript">
-                    <p>JavaScript</p>
-                </div>
                 <div class="progressbar">
+                    <p>JS</p>
                     <div class="bar-javascript" per="45"></div>
                 </div>
             </div>
             <div class="html">
-                <div class="tag-react">
-                    <p>React.JS</p>
-                </div>
                 <div class="progressbar">
+                    <p>React.JS</p>
                     <div class="bar-react" per="60"></div>
                 </div>
             </div>
             <div class="html">
-                <div class="tag-php">
-                    <p>PHP</p>
-                </div>
                 <div class="progressbar">
+                    <p>PHP</p>
                     <div class="bar-php" per="40"></div>
                 </div>
             </div>
             <div class="html">
-                <div class="tag-xamarin">
-                    <p>RPA</p>
-                </div>
                 <div class="progressbar">
+                    <p>RPA</p>
                     <div class="bar-rpa" per="80"></div>
                 </div>
             </div>
             <div class="html">
-                <div class="tag-net">
-                    <p>.NET</p>
-                </div>
                 <div class="progressbar">
+                     <p>.NET</p>
                     <div class="bar-net" per="50"></div>
                 </div>
             </div>
             <div class="html">
-                <div class="tag-sql">
-                    <p>SQL</p>
-                </div>
                 <div class="progressbar">
+                    <p>SQL</p>
                     <div class="bar-sql" per="80"></div>
                 </div>
             </div>
             <div class="html">
-                <div class="tag-csharp">
-                    <p>C#</p>
-                </div>
                 <div class="progressbar">
+                    <p>C#</p>
                     <div class="bar-csharp" per="50"></div>
                 </div>
             </div>
             <div class="html">
-                <div class="tag-rpa">
-                    <p>Xamarin</p>
-                </div>
                 <div class="progressbar">
+                    <p>Xamarin</p>
                     <div class="bar-xamarin" per="50"></div>
                 </div>
             </div>
@@ -200,61 +182,68 @@
 
     <div class="container work" id="work">
         <h1>Projetos</h1>
-
-
- <!--image slider start-->
- <div class="slider">
-    <div class="slides">
-      <!--radio buttons start-->
-      <input type="radio" name="radio-btn" id="radio1">
-      <input type="radio" name="radio-btn" id="radio2">
-      <input type="radio" name="radio-btn" id="radio3">
-      <input type="radio" name="radio-btn" id="radio4">
-      <!--radio buttons end-->
-      <!--slide images start-->
-      <div class="slide first">
-        <!-- <p>OIOIOIOI</p> -->
-        <a href="https://www.youtube.com/watch?v=KEgRxx7D9Bc"><img src="img/CLS.png" alt=""></a>
-      </div>
-      <div class="slide">
-       <a href="2222222"><img src="img/game.png" alt=""></a>
-      </div>
-      <div class="slide3">
-        <a href="55555"><img src="img/Site2.png" alt=""></a>
-      </div>
-      <div class="slide">
-        <img src="img/Banner.jpg" alt="">
-      </div>
-      <!--slide images end-->
-      <!--automatic navigation start-->
-      <div class="navigation-auto">
-        <div class="auto-btn1"></div>
-        <div class="auto-btn2"></div>
-        <div class="auto-btn3"></div>
-        <div class="auto-btn4"></div>
-      </div>
-      <!--automatic navigation end-->
-    </div>
-    <!--manual navigation start-->
-    <div class="navigation-manual">
-      <label for="radio1" class="manual-btn"></label>
-      <label for="radio2" class="manual-btn"></label>
-      <label for="radio3" class="manual-btn"></label>
-      <label for="radio4" class="manual-btn"></label>
-    </div>
-    <!--manual navigation end-->
-  </div>
-  <!--image slider end-->
-
-  
-
-    </div>
+        <!--image slider start-->
+        <div class="slider">
+            <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <input type="radio" name="radio-btn" id="radio6">
+            <!--radio buttons end-->
+            <!--slide images start-->
+            <div class="slide first">
+                <!-- <p>OIOIOIOI</p> -->
+                <a href="https://www.youtube.com/watch?v=KEgRxx7D9Bc" target="CLS Video"><img src="img/CLS.png" alt="CLS Video"></a>
+            </div>
+            <div class="slide">
+                <a href="https://github.com/DevHenr/Unity_Game_Project" target="Game Project"><img src="img/game.png" alt="Game Project"></a>
+            </div>
+            <div class="slide">
+                <a href="https://github.com/DevHenr/Portfolio" target="Portfolio Project"><img src="img/portfolio.png" alt="Portfolio Project"></a>
+            </div>
+            <div class="slide">
+                <a href="https://github.com/DevHenr/DEVFLIX" target="Devflix Project"><img src="img/Devflix.png" alt="Devflix Project"></a>
+            </div>
+            <div class="slide">
+                <a href="https://github.com/DevHenr/basic_python_games" target="Python Games Project"><img src="img/python_game.png" alt="Python Games Project"></a>
+            </div>
+            <div class="slide">
+                <a href="https://github.com/DevHenr/lingua_signans" target="CLS Project"><img src="img/CLS_Project.png" alt="CLS Project"></a>
+            </div>
+            <!--slide images end-->
+            <!--automatic navigation start-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+                <div class="auto-btn6"></div>
+            </div>
+            <!--automatic navigation end-->
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+            <label for="radio6" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+        <!--image slider end-->
+   </div>
 
     <div class="container contact" id="contact">
         <h1>Contato</h1>
         <form>
             <input type="text" name="name" placeholder="Nome Completo">
-            <input type="email" placeholder="Email">
+            <input type="email" placeholder="E-mail">
             <input type="text" placeholder="thiagohenriquest7z@gmail.com" disabled>
             <textarea name="message" cols="30" rows="10" placeholder="Mensagem"></textarea>
             <input type="submit" value="ENVIAR" >
@@ -273,6 +262,7 @@
     <script src="js/Timelinelite.min.js"></script>
     <script src="js/TweenMax.min.js"></script>
     <script src="js/CSSPlugin.min.js"></script>
+    <script src="js/scroll-out.js"></script>
     <script src="js/script.js"></script>
 
 </body>

@@ -1,0 +1,3 @@
+# Portfolio
+First portfolio project I ever did, I had to go for inspiration to complete it, since I couldn't decide how I'd like it to look...
+Anyway, I'm really happy to do this project, and it will have a lot of updates over time, of course.

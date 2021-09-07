@@ -15,19 +15,6 @@
     background-color: #ffffff13;
 }
 
-/*
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.295);
-    border-radius: 0px;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 0;
-    background: rgba(255, 0, 0, 0.384);
-    -webkit-box-shadow: inset 0 0 6px rgb(255, 9, 9);
-}
-*/
-
 html {
     scroll-behavior: smooth;
 }
@@ -78,7 +65,7 @@ if it's not present, don't show loader */
     /* https://thumbs.gfycat.com/RingedNiceFugu-size_restricted.gif */
 }
 .navbar {
-     z-index: 3;
+     z-index: 4;
      background:transparent;
      position: absolute;
      top: 0;
@@ -87,7 +74,7 @@ if it's not present, don't show loader */
 }
 
 header.sticky{
-    background: #181818;
+    background: #181818f6;
     position: fixed;
     top: 0;
     left: 0;
@@ -112,9 +99,13 @@ header.sticky a:hover:not(.navbar .lgo a) {
     transition: 0.6s;
 }
 
+header.sticky a:not(.navbar .lgo a):after{    
+    background: #ff5858;
+}
+
 .Banner img{
     width: 100%;
-    height: 750px; /*100vh*/
+    height: 750px; 
     background-size: cover;
     position: absolute;
     top: -6%;
@@ -133,11 +124,11 @@ header.sticky a:hover:not(.navbar .lgo a) {
 }
 
 .Icon img {
-  width: 180px; /* 13%*/
+  width: 180px; 
   position: absolute;
   top: 150px;
   background-color: #ed5565 ;
-  z-index: 2;
+  z-index: 3;
   border-right: 10px double #ffffff;
   border-left: 10px double #ffffff;
   border-bottom: 10px solid #ffffff;
@@ -146,23 +137,10 @@ header.sticky a:hover:not(.navbar .lgo a) {
   transition: 1.4s;
   perspective: 1000px;
   transform-style: preserve-3d;
-  box-shadow: 0 0 0.8rem #fff; /*box-shadow: 0 0 1.2rem rgb(0, 238, 255);*/
+  box-shadow: 0 0 0.8rem #fff; 
   -webkit-user-drag: none;
   user-select: none;
 }
-
-/* .Icon img:hover{
-    transform: rotateY(180deg);
-    transition: 1.4;
-
-} */
-
-/* header h1{
-    color: rgba(255, 255, 255, 0.795);
-    transition: 0.6s;
-    -webkit-user-drag: none;
-    user-select: none;
-} */
 
 header span {
     color: #ed5565;
@@ -171,6 +149,7 @@ header span {
 header a{
     color: #cfcfcf;
     transition: 0.6s;
+    font-weight: normal;
     position: relative;
 }
 
@@ -179,10 +158,29 @@ header a:hover:not(.navbar .lgo a){
     transition: 0.6s;
 }
 
+header a:not(.navbar .lgo a):after{    
+    background: none repeat scroll 0 0 transparent;
+    bottom: -5px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+
+  header a:hover:not(.navbar .lgo a):after{ 
+    width: 100%; 
+    left: 0; 
+}
+
 
 .text p
 {
-    color: #707070;
+    color: #979797; 
     transition: 0.6s;
     -webkit-user-drag: none;
 	user-select: none;
@@ -191,7 +189,8 @@ header a:hover:not(.navbar .lgo a){
 .about h1,
 .skills h1,
 .work h1,
-.contact h1
+.contact h1,
+.experience h1
 {
     color: #ffffff;
    -webkit-user-drag: none;
@@ -203,13 +202,9 @@ li {
     margin-left: 30px;
 }
 
- 
-
 a:not(.navbar .lgo a){
     font-size: .9rem;
     text-transform: uppercase;
-   
-    
 }
 
 a{
@@ -229,25 +224,27 @@ a{
     z-index: 2;
     -webkit-user-drag: none;
 	user-select: none;
+    display: unset;  
 }
 
 .about {
-    height: 900px;  /*115vh*/
-    margin-top: 500px;
-    background-color: rgba(59, 59, 59, 0.253);  
-    border-top: 6px double #ff0000;
+    height: 850px; 
     border-bottom: 6px double #ff0000;
-    box-shadow: 0 0 1.2rem #fd0000;
+    top: 50px;
+    position: relative;
+    margin-top: 500px;
+    background-color: rgb(17, 17, 17);  
     -webkit-user-drag: none;
 	user-select: none;
+    padding: 0px;
 }
 
 .about-me-info {
     max-width: 	400px;
-    height: 600px;   /*80vh*/
+    height: 600px;   
     background-color: #0a0a0ae7; 
     box-shadow: 0 0 0.7rem rgb(255, 255, 255), 0px 0px 0px 3px  rgb(255, 255, 255);
-    margin-top: 5px;
+    margin-top: 25px;
     border-top: 200px solid #ff3636;
     border-radius: 30px;
     padding: 50px;
@@ -284,14 +281,14 @@ a{
 
 .about-me-info a:nth-child(1) img {
     background-color: black;
-    box-shadow: 0 0 1.2rem #0099ff;
+    box-shadow: 0 0 .4rem #0099ff;
     border: 3px solid #00d9ff;
     top: -35%;
 }
 
 .about-me-info a:nth-child(2) img {
     background-color: #272727;
-    box-shadow: 0 0 1.2rem #36ff9b;
+    box-shadow: 0 0 .4rem #36ff9b;
     border: 3px solid #36ff9b;
     border-bottom: 3px solid #36ff9b;
     border-right: 3px solid #36ff9b;
@@ -327,24 +324,28 @@ a{
 
 .about h1
  {
-    color:#8b8b8b;
-    text-shadow: 7px 7px #000000;
-    font-size: 10rem;
+    color:#ffffff;
+    text-shadow: 2px 4px #000000; 
+    font-size: 6rem;
     z-index: 0;
     letter-spacing: 5px;
-    -webkit-text-stroke: 4px rgb(255, 255, 255);
-    font-family: 'Raleway', sans-serif;
-   
+    font-family: monospace;
+    font-weight: normal;
+    padding: 18px;
+    padding-left: 70px;
+    border-bottom: 1px solid white;
+    background-color: #ff4242;
+    width: 100%;
+    height: 150px;
 }
 
 .about-me-info p {
     font-size: 1.0rem;
     color: #ffffff;
     text-align: center;
-    letter-spacing: 1px;
-    word-spacing: 3px;
     margin-top: 20px;
-    font-style: italic;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
     padding: 0px;
 }
 
@@ -366,6 +367,9 @@ a{
     text-align: center;
     letter-spacing: 1px;
     margin-top: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+
 }
 
 .about-me-info h2 {
@@ -375,7 +379,7 @@ a{
     letter-spacing: 2px;
     margin-top: 5px;
     transition: .6s;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Nunito', sans-serif;
 
 }
 
@@ -397,7 +401,7 @@ a{
 }
 
 .paint {
-    width: 405px; /*33%*/
+    width: 405px; 
     position: relative;
     top: -300px;
     left: 50%;
@@ -409,20 +413,24 @@ a{
 
 .text{
     margin-top: 120px;
-    text-align: center;
+    text-align: center;  
 }
 
 .text h1 {
     color: rgb(255, 255, 255);
     font-size: 2.7rem;
     cursor: context-menu;
+    font-weight: normal;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+    height: 50px;
 }
 
 .text span {
     display: inline-block;
 }
 
-span:hover {
+span:hover:not(.CardText):not(.Year):not(.name) {
     color: #48cfad;
     transition: all .5s;
 }
@@ -444,7 +452,25 @@ span.m-left {
     letter-spacing: 3px;
     word-spacing: 10px;
     font-size: .8rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    margin-left: 5px;
 }
+
+.dud{
+  color: #ff4242;
+  font-weight: normal;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.4rem; 
+}
+
+
+.dud2{
+    color: #000000;
+    font-weight: normal;
+    font-family: monospace;
+}
+
 
 .text p:hover{
     color:#48cfad;
@@ -452,7 +478,7 @@ span.m-left {
 }
 
 .text a {
-    padding: 12px 7px;
+    padding: 12px 14px; 
     background-color: none;
     border: 3px solid #ed5565;
     color: #ed5565;
@@ -464,6 +490,7 @@ span.m-left {
     transition: .5s;
     display: inline-block;
     text-align: center;
+    border-radius: 0px; 
 }
 
 .text a:hover{
@@ -484,14 +511,17 @@ span.m-left {
 }
 
 .text a:hover::before{
-    height: 100%;
-    
+    height: 100%;  
 }
 
 .contact h1 {
     text-align: right;
-    font-size: 10rem;
-    opacity: .1;
+    color:#ffffff;
+    font-size: 6rem;
+    letter-spacing: 5px;
+    font-family: monospace;
+    font-weight: normal;
+    margin-bottom: 40px;  
 }
 
 .contact {
@@ -528,7 +558,7 @@ form input:last-child {
     width: 150px;
     background-color: transparent;
     border: 3px solid #ed5565;
-    box-shadow: 0 0 1.1rem #ed5565;
+    box-shadow: unset; 
     cursor: pointer;
     transition: all .5s;
     letter-spacing: 2px;
@@ -537,12 +567,14 @@ form input:last-child {
     color: #ed5565;
     position: relative;
     border-radius: 10px;
+    font-size: 15px;
+    letter-spacing: 2px;
 }
 
 form input:last-child:hover {
     color: #fff;
     background-color:  #ed5565;
-    width: 180px;
+    width: 165px;
 }
 
 form input:last-child::before{
@@ -562,17 +594,17 @@ form input:last-child:hover::before{
 }
 
 footer {
-   background-color: #181818;
+   background-color: #ff4240;
 }
 
-footer hr {
-    border: 2px solid #707070;
+  footer hr {
     margin-top: 80px;
-}
+    border: 1px solid #ffffff; 
+}  
 
 footer p {
     text-align: center;
-    color: #707070;
+    color: #ffffff;
     font-size: 1.2rem;
     padding: 30px 0;
     -webkit-user-drag: none;
@@ -580,16 +612,19 @@ footer p {
 }
 
 .skills {
-    height: 650px; /* 80vh*/
-    margin-top: 70px;
+    height: auto; 
+    margin-top: 140px;
 }
 
 .skills h1{
     text-align: right;
-    font-size: 10rem;
     margin-bottom: 100px;
-    opacity: .1;
-}
+    color:#ffffff;
+    font-size: 6rem;
+    letter-spacing: 5px;
+    font-family: monospace;
+    font-weight: normal;
+} 
 
 .html {
     display: flex;
@@ -665,31 +700,12 @@ footer p {
     transform: scale(1.5); 
 }
 
-
-
-/* div[class^='tag-'] {
-    width: 108px;
-}
-
-div[class^='tag-'] p {
-    color: #fff;
-    padding-left: 10px;
-    font-size: 1.0rem;
-    letter-spacing: 2px;
-   top: -25px;
-   left: 115px;
-   position: relative;
-   font-family: 'Raleway', sans-serif;
-    z-index: 1;
-} */
-
 .progressbar {
     position: relative;
     width: 1000px;
     height: 5px;
     border-radius: 20px;
     margin-top: 7px;
-    /* margin-right: 50px; */
     background: #181818;
 }
 
@@ -699,7 +715,8 @@ div[class^='tag-'] p {
     color: #fff;
     font-size: 1.0rem;
     letter-spacing: 2px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
     z-index: 1;
     left: 25px;
 }
@@ -840,22 +857,27 @@ div[class='bar-xamarin']::before {
 }
 
 .work {
-    height: 810px; /*110vh*/
-    margin-top: 260px;
+    height: 850px; 
+    margin-top: 90px;
     background-color: #3b3b3b41;  
-    border-top: 6px double #ff0000;
     border-bottom: 6px double #ff0000;
-    box-shadow: 0 0 1.2rem #ff0000;  
+    padding: 0px;
 }
 
 .work h1{
     text-align: left;
-    font-size: 10rem;
-    color:#8b8b8b;
-    text-shadow: 7px 7px #000000;
+    font-size: 6rem;
+    color:#ffffff;
+    text-shadow: 2px 4px #000000;
     letter-spacing: 5px;
-    -webkit-text-stroke: 4px rgb(255, 255, 255);
-    font-family: 'Raleway', sans-serif;
+    font-family: monospace;
+    font-weight: normal;
+    width: 100%;
+    border-bottom: 1px solid white;
+    background-color: #ff4240;
+    height: 150px;
+    padding: 18px;
+    padding-left: 70px;
 }
 
 .show{
@@ -863,7 +885,6 @@ div[class='bar-xamarin']::before {
 }
 
 .remove{
-    /* display: none; */
    cursor: none;
    pointer-events: none;
    transition: .5s;
@@ -872,16 +893,12 @@ div[class='bar-xamarin']::before {
 
 .slider{
     margin: auto;
-    margin-top: 50px;
-    width: 800px; /*63%*/
+    margin-top: 85px;
+    width: 800px; 
     height: 500px;
     border-radius: 10px;
     overflow: hidden; 
-    /* box-shadow: 0px 0px 10px #ffe4e4;
-    border-right: 4px solid #00f7ff;
-    border-left: 4px solid #ff009d;
-    border-top: 4px solid #fffb00;
-    border-bottom: 4px solid #00ff73; */
+    box-shadow: 0 0 0.7rem rgb(255 255 255), 0px 0px 0px 3px rgb(255 255 255);
 }
   
   .slides{
@@ -899,7 +916,36 @@ div[class='bar-xamarin']::before {
   .slides input{
     display: none;
   }
+
+
+  .Play{
+    display: flex;
+    justify-content: center;
+  }
+
+  .Play img{
+    width: 60px;
+    height: 60px;
+    top: 25px;
+    position: relative;
+    opacity: 30%;
+    transition: .3s;
+    cursor: pointer;
+  }
+
+  .Play img:nth-child(1){
+        width: 100px;
+        height: unset;
+        top: 20px;
+        display: none;
+  }
   
+  .Play img:hover{
+    transform: scale(1.2); 
+    transition: .3s;
+    opacity: 1;
+  }
+
   .slide {
     width: 20%;
     transition: 1s;
@@ -922,11 +968,13 @@ div[class='bar-xamarin']::before {
   
   .navigation-manual{
     position: absolute;
-    width: 800px;
-    margin-top: -40px;
+    margin-top: -440px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     z-index: 1;
+    transform: translateX(1526%);
+   
   }
   
   .manual-btn{
@@ -935,6 +983,8 @@ div[class='bar-xamarin']::before {
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
+    width: 10px;
+    margin-bottom: 10px;
   }
   
   .manual-btn:not(:last-child){
@@ -951,7 +1001,7 @@ div[class='bar-xamarin']::before {
 
    #radio1:checked ~ .slide:nth-of-type(1) img{
     opacity: 100;
-    transition: 4s;
+    transition: 1s;
   } 
 
   #radio2:checked ~ .first{
@@ -960,7 +1010,7 @@ div[class='bar-xamarin']::before {
 
   #radio2:checked ~ .slide:nth-of-type(2n) img{
     opacity: 100;
-    transition: 4s;
+    transition: 1s;
   }
 
   #radio3:checked ~ .first{
@@ -969,7 +1019,7 @@ div[class='bar-xamarin']::before {
 
   #radio3:checked ~ .slide:nth-of-type(3n) img{
     opacity: 100;
-    transition: 4s;
+    transition: 1s;
   }
   
   #radio4:checked ~ .first{
@@ -978,7 +1028,7 @@ div[class='bar-xamarin']::before {
 
   #radio4:checked ~ .slide:nth-of-type(4n) img{
     opacity: 100;
-    transition: 4s;
+    transition: 1s;
   }
 
   #radio5:checked ~ .first{
@@ -987,7 +1037,7 @@ div[class='bar-xamarin']::before {
 
   #radio5:checked ~ .slide:nth-of-type(5n) img{
     opacity: 100;
-    transition: 4s;
+    transition: 1s;
   }
 
   #radio6:checked ~ .first{
@@ -996,7 +1046,7 @@ div[class='bar-xamarin']::before {
 
   #radio6:checked ~ .slide:nth-of-type(6n) img{
     opacity: 100;
-    transition: 4s;
+    transition: 1s;
   }
 
   /*css for automatic navigation*/
@@ -1004,9 +1054,10 @@ div[class='bar-xamarin']::before {
   .navigation-auto{
     position: absolute;
     display: flex;
-    width: 800px;
     justify-content: center;
-    margin-top: 460px;
+    margin-top: 60px;
+    flex-direction: column;
+    transform: translateX(1525%);
   }
   
   .navigation-auto div{
@@ -1014,6 +1065,8 @@ div[class='bar-xamarin']::before {
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
+    width: 10px;
+    margin-bottom: 10px;
   }
   
   .navigation-auto div:not(:last-child){
@@ -1044,106 +1097,29 @@ div[class='bar-xamarin']::before {
     background: #40D3DC;
 }
 
-
 /*Responsive layout*/
-/*
-@media screen and (max-width: 516px) {
-
-    /* header li a {
-        font-size: 10px;
-        
-    }
-
-    .lgo h1{
-        font-size: 15px;
-
-    } */
-
-    /* header{
-
-        justify-content: space-around;
-    } */
-/*
-    li {
-        margin-left: 10px;
-    }
-
-    .about-me-info {
-    max-width: 	340px;
-    height: 90vh;
-    padding: 35px;
-    }
-
-    .about img {
-    width: 255px;
-    top: -150px;
-    left: calc(100% - 100px);
-    right: calc(100% - 100px);
-    }
-
-    .about-me-info a img {
-        position: absolute;
-        left: -20%;
-        transform: scale(0.9);
-    }
-
-    .about-me-info a:nth-child(1) img:hover,
-    .about-me-info a:nth-child(2) img:hover{
-        transform: scale(1.1);
-    
-    }
-    
-    
-    .about h1,
-    .work h1{
-        -webkit-text-stroke: 2px rgb(255, 255, 255);
-    }
-    .text h1 {
-        font-size: 2rem;
-    }
-
-    .about h1,
-    .skills h1,
-    .work h1,
-    .contact h1 {
-        font-size: 3rem;
-    }
-
-    form input,
-    form textarea {
-        width: 300px;
-        font-size: 1.0rem;
-    }
-
-    div[class^='tag-'] p {
-        
-        letter-spacing: 2px;
-       top: -15px;
-       left: -150%;
-    }
-    */
 
 
 @media screen and (max-width: 480px) {
 
-    .container:not(.Banner):not(.skills){
+    .container:not(.Banner):not(.skills):not(.work):not(.about){
         padding: 0 15px 0 15px;
     }
 
     .Icon img {
-        width: 140px; /* 13%*/
+        width: 140px; 
         position: absolute;
         top: 145px;
     }
 
     header {
         justify-content: space-around;
-        padding: 15px 35px;
+        padding: 15px 0px;
     
     }
     
     header.sticky{
-        padding: 20px 35px;
+        padding: 20px 0px;
     }
 
     li {
@@ -1151,15 +1127,25 @@ div[class='bar-xamarin']::before {
     } 
 
     a:not(.navbar .lgo a){
-        font-size: .9rem;
+        font-size: .8rem;
         text-transform: uppercase;
        
         
     }
 
     .text h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
+
+
+    .dud{
+        font-size: 1.3rem; 
+      }
+
+      .text p{
+          margin-top: 15px;
+          font-size: .6rem;
+      }
     
     .about h1,
     .work h1,
@@ -1168,17 +1154,28 @@ div[class='bar-xamarin']::before {
         white-space:nowrap;
     }
 
-    .skills h1{
-        font-size: 3.8rem;
-    }
-
-
-
     .about h1,
     .work h1{
-        -webkit-text-stroke: 2px rgb(255, 255, 255);
+        padding: 40px;
+        padding-left: 30px;
     }
 
+    .skills h1{
+        font-size: 2.8rem;
+    }
+
+
+    .about {
+        height: 910px;
+    }
+
+    .work {
+        height: 870px;
+    }
+
+    .contact {
+        margin-top: 80px;
+    }
 
     .about-me-info {
         max-width: 	320px;
@@ -1197,13 +1194,13 @@ div[class='bar-xamarin']::before {
     }
     
     .about-me-info a:nth-child(1) img {
-        top: -48%; /*85%*/
-        left: 80%; /*75%*/
+        top: -48%; 
+        left: 80%; 
     }
     
     .about-me-info a:nth-child(2) img {
-        top: -48%; /*85%*/
-        left: 5%; /*10%*/
+        top: -48%; 
+        left: 5%; 
     }
 
     .about-me-info a:nth-child(1) img:hover,
@@ -1215,7 +1212,7 @@ div[class='bar-xamarin']::before {
     .paint {
         top: -180px;
         width: 295px;
-        transform: translate(-5%);
+        transform: translate(-15%);
         }
 
     .slider{
@@ -1236,12 +1233,23 @@ div[class='bar-xamarin']::before {
 
       .navigation-manual{
         width: 400px;
+        margin-top: -40px;
+        flex-direction: unset;
+        transform: translate(0);
       }
 
       .navigation-auto{
         width: 400px;
+        flex-direction: unset;
+        margin-top: 460px;
+        transform: translate(0);
       }
-
+      
+      .manual-btn,
+      .navigation-auto div{
+        width: unset;
+        margin-bottom: unset;
+      }
 
       .progressbar{
 
@@ -1256,16 +1264,20 @@ div[class='bar-xamarin']::before {
 /*Medium Smartphones*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
-    /* .Icon img {
-        width: 17vh;
-    } */
-
-    .container:not(.Banner):not(.skills){
+    .container:not(.Banner):not(.skills):not(.work):not(.about){
         padding: 0 20px 0 20px;
     }
 
     li {
         margin-left: 10px;
+    }
+
+    .about {
+        height: 880px;
+    }
+
+    .work {
+        height: 860px;
     }
 
     .about-me-info {
@@ -1290,25 +1302,34 @@ div[class='bar-xamarin']::before {
         transform: scale(1.1);
     
     }
-    
-    
-    .about h1,
-    .work h1{
-        -webkit-text-stroke: 2px rgb(255, 255, 255);
-    }
+
     .text h1 {
         font-size: 2rem;
     }
 
+    .dud{
+        font-size: 1.8rem; 
+      }
+
+      .text p{
+          margin-top: 5px;
+      }
+
     .about h1,
     .work h1,
     .contact h1 {
-        font-size: 5.4rem;
+        font-size: 4.5rem;
         white-space:nowrap;
     }
 
+    .about h1,
+    .work h1{
+        padding: 30px;
+        padding-left: 30px;
+    }
+
     .skills h1{
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
 
     form input,
@@ -1317,9 +1338,8 @@ div[class='bar-xamarin']::before {
         font-size: 1.0rem;
     }
 
-
     .slider{
-        width: 400px; /*800px*/
+        width: 400px; 
     }
 
     .slide img{
@@ -1335,11 +1355,11 @@ div[class='bar-xamarin']::before {
        }
 
       .navigation-manual{
-        width: 400px;
+        transform: translate(790%);
       }
 
       .navigation-auto{
-        width: 400px;
+        transform: translate(790%);
       }
 
       .progressbar{
@@ -1361,29 +1381,21 @@ div[class='bar-xamarin']::before {
 /*Large Smartphones and small notebooks*/
 @media screen and (min-width: 769px) and (max-width: 1199px) {
 
-    .container:not(.Banner):not(.skills){
+    .container:not(.Banner):not(.skills):not(.work):not(.about){
         padding: 0 80px 0 80px;
     }
-
-
-    .about h1,
-    .skills h1,
-    .work h1,
-    .contact h1 {
-        font-size: 7.5rem;
-    }
-
     .about h1{
         white-space:nowrap;
     }
 
     .about h1,
     .work h1{
-        -webkit-text-stroke: 2px rgb(255, 255, 255);
+        padding: 18px;
+        padding-left: 70px;
     }
 
     .slider{
-        width: 670px; /*800px*/
+        width: 670px; 
     }
 
 
@@ -1400,13 +1412,13 @@ div[class='bar-xamarin']::before {
        }
 
 
-    .navigation-manual{
-        width: 700px;
+     .navigation-manual{
+        transform: translate(1280%);
       }
 
       .navigation-auto{
-        width: 700px;
-      }
+        transform: translate(1280%);
+      } 
 }
 
 

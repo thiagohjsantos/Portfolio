@@ -110,7 +110,7 @@ header.sticky a:not(.navbar .lgo a):after{
     position: absolute;
     top: -6%;
     z-index: 1;
-    opacity: 55%;
+    opacity: 100%;  /*55%*/
     margin-left: -100px;
     display: inline-block;
     z-index: -1;

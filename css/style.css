@@ -32,6 +32,7 @@ nav ul,
 
 body {
     background-color: #000;
+    overflow-x: hidden;
 }
 
 header {
@@ -1318,18 +1319,18 @@ div[class='bar-xamarin']::before {
     .about h1,
     .work h1,
     .contact h1 {
-        font-size: 4.5rem;
+        font-size: 4.2rem;
         white-space:nowrap;
     }
 
     .about h1,
     .work h1{
-        padding: 30px;
+        padding: 35px;
         padding-left: 30px;
     }
 
     .skills h1{
-        font-size: 3.5rem;
+        font-size: 3.3rem;
     }
 
     form input,

@@ -127,7 +127,7 @@ header.sticky a:not(.navbar .lgo a):after{
 .Icon img {
   width: 180px; 
   position: absolute;
-  top: 150px;
+  top: 180px;
   background-color: #ed5565 ;
   z-index: 3;
   border-right: 10px double #ffffff;
@@ -1110,7 +1110,7 @@ div[class='bar-xamarin']::before {
     .Icon img {
         width: 140px; 
         position: absolute;
-        top: 145px;
+        top: 215px;
     }
 
     header {
@@ -1168,6 +1168,7 @@ div[class='bar-xamarin']::before {
 
     .about {
         height: 910px;
+        margin-top: 540px;
     }
 
     .work {

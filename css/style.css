@@ -790,12 +790,12 @@ div[class='bar-react']::before {
     background: #00a2ff;
 }
 
-div[class='bar-php'] {
+div[class='bar-python'] {
     background-color: #7700ff;
     box-shadow: 0 0 0.7rem #7700ff;
 }
 
-div[class='bar-php']::before {
+div[class='bar-python']::before {
     background: #7700ff;
 }
 
@@ -835,6 +835,15 @@ div[class='bar-csharp']::before {
     background: #00ff15;
 }
 
+div[class='bar-java'] {
+    background-color: #f5263b;
+    box-shadow: 0 0 0.7rem #f5263b;
+}
+
+div[class='bar-java']::before {
+    background: #f5263b;
+}
+
 div[class='bar-xamarin'] {
     background-color: #0059ff;
     box-shadow: 0 0 0.7rem #0059ff;
@@ -848,11 +857,12 @@ div[class='bar-xamarin']::before {
 .bar-css,
 .bar-javascript,
 .bar-react,
-.bar-php,
+.bar-python,
 .bar-rpa,
 .bar-net,
 .bar-sql,
 .bar-csharp,
+.bar-java,
 .bar-xamarin {
     width: calc(0 - 6px);
 }

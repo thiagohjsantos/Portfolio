@@ -13,12 +13,14 @@ const htmlBar = document.querySelector('.bar-html')
 const cssBar = document.querySelector('.bar-css')
 const jsBar = document.querySelector('.bar-javascript')
 const reactBar = document.querySelector('.bar-react')
-const phpBar = document.querySelector('.bar-php')
+const pythonBar = document.querySelector('.bar-python')
 const xamarinBar = document.querySelector('.bar-xamarin')
 const netBar = document.querySelector('.bar-net')
 const sqlBar = document.querySelector('.bar-sql')
 const csharpBar = document.querySelector('.bar-csharp')
 const rpaBar = document.querySelector('.bar-rpa')
+const javaBar = document.querySelector('.bar-java')
+
 
 let header = doc.querySelector('header');
 let lastScrollTop = 0;
@@ -29,11 +31,12 @@ t1.fromTo(htmlBar, .75, {width: `calc(0% - 6px`,}, {width: `calc(70% - 6px)`, ea
 .fromTo(cssBar, .75, {width: `calc(0% - 6px`}, {width: `calc(45% - 6px)`, ease: Power4.easeOut})
 .fromTo(jsBar, .75, {width: `calc(0% - 6px`}, {width: `calc(45% - 6px)`, ease: Power4.easeOut})
 .fromTo(reactBar, .75, {width: `calc(0% - 6px`}, {width: `calc(60% - 6px)`, ease: Power4.easeOut})
-.fromTo(phpBar, .75, {width: `calc(0% - 6px`}, {width: `calc(40% - 6px)`, ease: Power4.easeOut})
+.fromTo(pythonBar, .75, {width: `calc(0% - 6px`}, {width: `calc(50% - 6px)`, ease: Power4.easeOut})
 .fromTo(rpaBar, .75, {width: `calc(0% - 6px`}, {width: `calc(80% - 6px)`, ease: Power4.easeOut})
 .fromTo(netBar, .75, {width: `calc(0% - 6px`}, {width: `calc(50% - 6px)`, ease: Power4.easeOut})
 .fromTo(sqlBar, .75, {width: `calc(0% - 6px`}, {width: `calc(80% - 6px)`, ease: Power4.easeOut})
 .fromTo(csharpBar, .75, {width: `calc(0% - 6px`}, {width: `calc(50% - 6px)`, ease: Power4.easeOut})
+.fromTo(javaBar, .75, {width: `calc(0% - 6px`}, {width: `calc(40% - 6px)`, ease: Power4.easeOut})
 .fromTo(xamarinBar, .75, {width: `calc(0% - 6px`}, {width: `calc(50% - 6px)`, ease: Power4.easeOut})
 
 

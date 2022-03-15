@@ -10,7 +10,6 @@
 }
 
 ::selection {
-
     color: none;
     background-color: #ffffff13;
 }
@@ -46,13 +45,7 @@ header {
     left: 0;
 }
 
-/* Paste this css to your style sheet file or under head tag */
-/* This only works with JavaScript, 
-if it's not present, don't show loader */
-
-
- /*HABILITAR DEPOIS */
- .no-js #loader { display: none;  }
+.no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
 .se-pre-con {
 	position: fixed;
@@ -62,16 +55,15 @@ if it's not present, don't show loader */
 	height: 100%;
     z-index: 9999;
     background: url(https://thumbs.gfycat.com/RingedNiceFugu-size_restricted.gif) center no-repeat rgb(0, 0, 0);
-    /* https://media3.giphy.com/media/UWc5xpirgmbUg5XRRc/giphy.gif */
-    /* https://thumbs.gfycat.com/RingedNiceFugu-size_restricted.gif */
 }
+
 .navbar {
-     z-index: 4;
-     background:transparent;
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
+    z-index: 4;
+    background:transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 header.sticky{
@@ -172,12 +164,10 @@ header a:not(.navbar .lgo a):after{
     width: 0;
 }
 
-
-  header a:hover:not(.navbar .lgo a):after{ 
+header a:hover:not(.navbar .lgo a):after{ 
     width: 100%; 
     left: 0; 
 }
-
 
 .text p
 {
@@ -268,7 +258,7 @@ a{
 }
 
  
- .about-me-info a img {
+.about-me-info a img {
     position: absolute;
     width: 14%;
     height: 60px;
@@ -277,7 +267,6 @@ a{
     transition: .8s;
     opacity: .5;
     transform: translateX(calc(-100% + 100px));
-
 } 
 
 .about-me-info a:nth-child(1) img {
@@ -314,7 +303,6 @@ a{
     -webkit-user-drag: none;
 	user-select: none;
     transform: translateX(calc(-100% + 100px));
-
 }
 
 .about-me-info a:nth-child(1) img:hover,
@@ -323,8 +311,7 @@ a{
   opacity: 100%;
 }
 
-.about h1
- {
+.about h1 {
     color:#ffffff;
     text-shadow: 2px 4px #000000; 
     font-size: 6rem;
@@ -350,7 +337,6 @@ a{
     padding: 0px;
 }
 
-
 .about-me-info p:last-child  {
     top: -33px;
     color: rgb(255, 255, 255);
@@ -370,7 +356,6 @@ a{
     margin-top: 20px;
     font-family: 'Nunito', sans-serif;
     font-weight: normal;
-
 }
 
 .about-me-info h2 {
@@ -381,14 +366,11 @@ a{
     margin-top: 5px;
     transition: .6s;
     font-family: 'Nunito', sans-serif;
-
 }
 
 .about-me-info h2:hover {
     color: #48cfad;
     transition: .6s;
-
-
 }
 
 .about-me-info span {
@@ -464,7 +446,6 @@ span.m-left {
   font-family: 'Nunito', sans-serif;
   font-size: 2.4rem; 
 }
-
 
 .dud2{
     color: #000000;
@@ -549,7 +530,7 @@ form textarea {
     transform: translateX(-50%);
 }
 
- form textarea{
+form textarea{
     resize: vertical;
     min-height: 270px;
     max-height: 500px;
@@ -912,29 +893,27 @@ div[class='bar-xamarin']::before {
     box-shadow: 0 0 0.7rem rgb(255 255 255), 0px 0px 0px 3px rgb(255 255 255);
 }
   
-  .slides{
+.slides{
     width: 500%;
     height: 500px;
     display: flex;
-  }
+}
 
-   .slides img {
+.slides img {
     opacity: 0;
     transition: 1s;
-  }
+}
 
-  
-  .slides input{
+.slides input{
     display: none;
-  }
+}
 
-
-  .Play{
+.Play{
     display: flex;
     justify-content: center;
-  }
+}
 
-  .Play img{
+.Play img{
     width: 60px;
     height: 60px;
     top: 25px;
@@ -942,42 +921,42 @@ div[class='bar-xamarin']::before {
     opacity: 30%;
     transition: .3s;
     cursor: pointer;
-  }
+}
 
-  .Play img:nth-child(1){
-        width: 100px;
-        height: unset;
-        top: 20px;
-        display: none;
-  }
+.Play img:nth-child(1){
+    width: 100px;
+    height: unset;
+    top: 20px;
+    display: none;
+}
   
-  .Play img:hover{
+.Play img:hover{
     transform: scale(1.2); 
     transition: .3s;
     opacity: 1;
-  }
+}
 
-  .slide {
+.slide {
     width: 20%;
     transition: 1s;
-   } 
+} 
 
-  .slide img{
+.slide img{
     width: 800px;
     height: 500px;  
-   }
+}
 
-  .slide:nth-of-type(3n) img{
+.slide:nth-of-type(3n) img{
     width: 830px;   
-   }
+}
 
-  .slide:nth-of-type(6n) img{
+.slide:nth-of-type(6n) img{
     width: 820px; 
-   }
+}
 
   /*css for manual slide navigation*/
   
-  .navigation-manual{
+.navigation-manual{
     position: absolute;
     margin-top: -440px;
     display: flex;
@@ -985,10 +964,9 @@ div[class='bar-xamarin']::before {
     justify-content: center;
     z-index: 1;
     transform: translateX(1526%);
-   
-  }
+}
   
-  .manual-btn{
+.manual-btn{
     border: 2px solid #40D3DC;
     padding: 5px;
     border-radius: 10px;
@@ -996,97 +974,106 @@ div[class='bar-xamarin']::before {
     transition: 1s;
     width: 10px;
     margin-bottom: 10px;
-  }
+}
   
-  .manual-btn:not(:last-child){
+.manual-btn:not(:last-child){
     margin-right: 40px;
-  }
+}
   
-  .manual-btn:hover{
+.manual-btn:hover{
     background: #40D3DC;
-  }
+}
   
-  #radio1:checked ~ .first{
+#radio1:checked ~ .first{
     margin-left: 0;
-  }
+}
 
-   #radio1:checked ~ .slide:nth-of-type(1) img{
+#radio1:checked ~ .slide:nth-of-type(1) img{
     opacity: 100;
     transition: 1s;
-  } 
+} 
 
-  #radio2:checked ~ .first{
+#radio2:checked ~ .first{
     margin-left: -20%;
-  }
+}
 
-  #radio2:checked ~ .slide:nth-of-type(2n) img{
+#radio2:checked ~ .slide:nth-of-type(2n) img{
     opacity: 100;
     transition: 1s;
-  }
+}
 
-  #radio3:checked ~ .first{
+#radio3:checked ~ .first{
     margin-left: -40%;
-  }
+}
 
-  #radio3:checked ~ .slide:nth-of-type(3n) img{
+#radio3:checked ~ .slide:nth-of-type(3n) img{
     opacity: 100;
     transition: 1s;
-  }
+}
   
-  #radio4:checked ~ .first{
+#radio4:checked ~ .first{
     margin-left: -60%;
-  }
+}
 
-  #radio4:checked ~ .slide:nth-of-type(4n) img{
+#radio4:checked ~ .slide:nth-of-type(4n) img{
     opacity: 100;
     transition: 1s;
-  }
+}
 
-  #radio5:checked ~ .first{
+#radio5:checked ~ .first{
     margin-left: -80%;
-  }
+}
 
-  #radio5:checked ~ .slide:nth-of-type(5n) img{
+#radio5:checked ~ .slide:nth-of-type(5n) img{
     opacity: 100;
     transition: 1s;
-  }
+}
 
-  #radio6:checked ~ .first{
+#radio6:checked ~ .first{
     margin-left: -100%;
-  }
+}
 
-  #radio6:checked ~ .slide:nth-of-type(6n) img{
+#radio6:checked ~ .slide:nth-of-type(6n) img{
     opacity: 100;
     transition: 1s;
-  }
+}
 
-  /*css for automatic navigation*/
+#radio7:checked ~ .first{
+    margin-left: -120%;
+}
+
+#radio7:checked ~ .slide:nth-of-type(7n) img{
+    opacity: 100;
+    transition: 1s;
+}
+
+/*css for automatic navigation*/
   
-  .navigation-auto{
+.navigation-auto{
     position: absolute;
     display: flex;
     justify-content: center;
     margin-top: 60px;
     flex-direction: column;
     transform: translateX(1525%);
-  }
+}
   
-  .navigation-auto div{
+.navigation-auto div{
     border: 2px solid #40D3DC;
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
     width: 10px;
     margin-bottom: 10px;
-  }
+}
   
-  .navigation-auto div:not(:last-child){
+.navigation-auto div:not(:last-child){
     margin-right: 40px;
-  }
+}
   
-  #radio1:checked ~ .navigation-auto .auto-btn1{
+#radio1:checked ~ .navigation-auto .auto-btn1{
     background: #40D3DC;
-  }
+}
   
 #radio2:checked ~ .navigation-auto .auto-btn2{
     background: #40D3DC;
@@ -1108,9 +1095,11 @@ div[class='bar-xamarin']::before {
     background: #40D3DC;
 }
 
+#radio7:checked ~ .navigation-auto .auto-btn7{
+    background: #40D3DC;
+}
+
 /*Responsive layout*/
-
-
 @media screen and (max-width: 480px) {
 
     .container:not(.Banner):not(.skills):not(.work):not(.about){
@@ -1126,7 +1115,6 @@ div[class='bar-xamarin']::before {
     header {
         justify-content: space-around;
         padding: 15px 0px;
-    
     }
     
     header.sticky{
@@ -1139,24 +1127,21 @@ div[class='bar-xamarin']::before {
 
     a:not(.navbar .lgo a){
         font-size: .8rem;
-        text-transform: uppercase;
-       
-        
+        text-transform: uppercase;  
     }
 
     .text h1 {
         font-size: 1.5rem;
     }
 
-
     .dud{
         font-size: 1.3rem; 
-      }
+    }
 
-      .text p{
-          margin-top: 15px;
-          font-size: .6rem;
-      }
+    .text p{
+        margin-top: 15px;
+        font-size: .6rem;
+    }
     
     .about h1,
     .work h1,
@@ -1234,44 +1219,48 @@ div[class='bar-xamarin']::before {
     .slide img{
         width: 400px;
     }
-
-      .slide:nth-of-type(3n) img{
-        width: 430px;   
-       }
     
-      .slide:nth-of-type(6n) img{
+    .slide:nth-of-type(7n) img,
+    .slide:nth-of-type(3n) img{
+        width: 430px;   
+    }
+    
+    .slide:nth-of-type(6n) img{
         width: 420px; 
-       }
+    }
 
-      .navigation-manual{
+    .navigation-manual{
         width: 400px;
         margin-top: -40px;
         flex-direction: unset;
         transform: translate(0);
-      }
+    }
 
-      .navigation-auto{
+    .navigation-auto{
         width: 400px;
         flex-direction: unset;
         margin-top: 460px;
         transform: translate(0);
-      }
+    }
+
+    .navigation-auto div:not(:last-child),
+    .manual-btn:not(:last-child){
+        margin-right: 35px;
+    }
       
-      .manual-btn,
-      .navigation-auto div{
+    .manual-btn,
+    .navigation-auto div{
         width: unset;
         margin-bottom: unset;
-      }
+    }
 
-      .progressbar{
+    .progressbar{
 
         margin-left: -50px;
         margin-right: -50px;
     }
 
 }
-
-
 
 /*Medium Smartphones*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -1321,11 +1310,11 @@ div[class='bar-xamarin']::before {
 
     .dud{
         font-size: 1.8rem; 
-      }
+    }
 
-      .text p{
-          margin-top: 5px;
-      }
+    .text p{
+        margin-top: 5px;
+    }
 
     .about h1,
     .work h1,
@@ -1358,37 +1347,35 @@ div[class='bar-xamarin']::before {
         width: 400px;
     }
 
-      .slide:nth-of-type(3n) img{
+    .slide:nth-of-type(7n) img,
+    .slide:nth-of-type(3n) img{
         width: 430px;   
-       }
+    }
     
-      .slide:nth-of-type(6n) img{
+    .slide:nth-of-type(6n) img{
         width: 420px; 
-       }
+    }
 
-      .navigation-manual{
+    .navigation-manual{
         transform: translate(790%);
-      }
+    }
 
-      .navigation-auto{
+    .navigation-auto{
         transform: translate(790%);
-      }
+    }
 
-      .progressbar{
-
+    .progressbar{
         margin-right: -30px;
-      }
+    }
 
-      header{
+    header{
         justify-content: space-around;
-        }
+    }
 
-        header.sticky{
-            padding: 25px 105px;
-        }
+    header.sticky{
+        padding: 25px 105px;
+    }
 }
-
-
 
 /*Large Smartphones and small notebooks*/
 @media screen and (min-width: 769px) and (max-width: 1199px) {
@@ -1410,36 +1397,23 @@ div[class='bar-xamarin']::before {
         width: 670px; 
     }
 
-
     .slide img{
         width: 680px;
     }
 
-      .slide:nth-of-type(3n) img{
+    .slide:nth-of-type(3n) img{
         width: 710px;   
-       }
-    
-      .slide:nth-of-type(6n) img{
-        width: 700px; 
-       }
-
-
-     .navigation-manual{
-        transform: translate(1280%);
-      }
-
-      .navigation-auto{
-        transform: translate(1280%);
-      } 
-}
-
-
-
-/*XLarges Screens*/
- /* @media screen and (min-width: 1200px) {
-
-    .container{
-        padding: 0 100px 0 100px;
-        
     }
-}  */
+    
+    .slide:nth-of-type(6n) img{
+        width: 700px; 
+    }
+
+    .navigation-manual{
+        transform: translate(1280%);
+    }
+
+    .navigation-auto{
+        transform: translate(1280%);
+    } 
+}
